@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context="com.example.user.gesture_character.MainActivity">
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gOverlay"
+
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@+id/plain_text_input"
+        android:layout_gravity="center_horizontal">
+        <!--
+        <TextView
+            android:id="@+id/textwrite"
+            android:layout_width="202dp"
+            android:layout_height="128dp"
+            android:text=""
+
+            android:textColor="@android:color/black"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        -->
+
+
+
+
+    </android.gesture.GestureOverlayView>
+
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gOverlay"
+        android:text="DELETE"/>
+
+    <Button
+        android:id="@+id/spaceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gOverlay"
+        android:layout_alignParentRight="true"
+        android:text="SPACE"/>
+
+</RelativeLayout>

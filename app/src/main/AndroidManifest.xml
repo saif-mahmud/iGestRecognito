@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andrei.igestrecognito">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo2"
+        android:label="iGest Recognito"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.andrei.igestrecognito.menu.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.andrei.igestrecognito.menu.ModesActivity"
+            android:label="MODES"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.menu.OptionSelectActivity"
+            android:label="SELECT OPTION"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.menu.OrdinaryMenuActivity"
+            android:label="MENU"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.tutorial.TutorialActivity"
+            android:label="iGest :: TUTORIAL"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.keyboard.SignToTextActivity"
+            android:label="iGest :: KEYBOARD"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.voice.SpeechToTextActivity"
+            android:label="iGest :: VOICE RECOGNITION"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.messenger.ChatActivity"
+            android:label="iGest :: CHAT"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.messenger.LoginActivity"
+            android:label="iGest :: LOG IN"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.messenger.RegisterActivity"
+            android:label="iGest :: REGISTER"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.messenger.UsersActivity"
+            android:label="iGest :: USERS"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.textsign.ComposeActivity"
+            android:label="Text to Sign"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.gesture.GestureActivity"
+            android:label="iGesture"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name="com.example.andrei.igestrecognito.subtitle.PlayerActivity"
+            android:label="Sign Subtitle"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+
+        <service
+            android:name="com.example.andrei.igestrecognito.keyboard.SignToTextKeyboard"
+            android:label="iGest Recognito Keyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/sign_to_text_method" />
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

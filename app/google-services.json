@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1098008904722",
+    "firebase_url": "https://igest-recognito.firebaseio.com",
+    "project_id": "igest-recognito",
+    "storage_bucket": "igest-recognito.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098008904722:android:d43e46d1181ba9c3",
+        "android_client_info": {
+          "package_name": "com.example.andrei.igestrecognito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098008904722-6u9omma88s3m8r56dgrd6js1p390ovbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmlnlGG-KxUzr_zTcucKNYoY6f8CHFfr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
