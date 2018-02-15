@@ -3,9 +3,9 @@
 
 
 **Developed by:**
-- [Amit Roy](@AmitRoy7)
-- [Saif Mahmud](@Saif-M-Dhrubo)
-- [Tauhid Tanjim](@Tanjim13)
+- [Amit Roy](https://github.com/AmitRoy7)
+- [Saif Mahmud](https://github.com/Saif-M-Dhrubo)
+- [Tauhid Tanjim](https://github.com/Tanjim13)
 
 **Features:**
 - Keyboard with American Sign Language Layout
